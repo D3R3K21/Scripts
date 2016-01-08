@@ -48,7 +48,10 @@ function getuser()
 {
 echo "Current User is: $user.";
 }
-
+function alias()
+{
+git config --global alias.$1 $2
+}
 function setremote()
 {
 git remote rm $user;
